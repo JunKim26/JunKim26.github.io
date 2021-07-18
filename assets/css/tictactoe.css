@@ -16,9 +16,9 @@ body {
   height: 100vh;
   display:grid;
   justify-content: center;
-  alignt-content: center;
+  align-content: center;
   justify-items: center;
-  alignt-items: center;
+  align-items: center;
   grid-template-columns: repeat(3, auto);
 }
 
@@ -30,6 +30,7 @@ body {
   justify-content: center;
   alignt-items: center;
   position:relative;
+  background-color:white;
 }
 
 .cell: first-child,
