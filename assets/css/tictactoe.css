@@ -19,7 +19,7 @@ body {
   alignt-content: center;
   justify-items: center;
   alignt-items: center;
-  grid-template-columns:repeat(3, auto)
+  grid-template-columns: repeat(3, auto);
 }
 
 .cell {
@@ -62,9 +62,9 @@ body {
 }
 
 .cell.x::before{
-   transform: rotate(45deg)
+   transform: rotate(45deg);
 }
 
 .cell.x::after{
-   transform: rotate(-45deg)
+   transform: rotate(-45deg);
 }
