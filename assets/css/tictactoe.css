@@ -28,7 +28,7 @@ body {
   border: 1pxs solid black;
   display:flex;
   justify-content: center;
-  alignt-items: center;
+  align-items: center;
   position:relative;
   background-color:white;
 }
