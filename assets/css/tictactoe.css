@@ -13,6 +13,7 @@ body {
 
 .board{
   width: 100%;
+  min-width:350px;
   height: 50vh;
   display:grid;
   justify-content: center;
