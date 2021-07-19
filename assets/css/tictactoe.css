@@ -84,7 +84,7 @@ background-color: black;
 }
 
 .cell.x::before,
-.board.x .cell:not(.x):not(.circle):hover::before,{
+.board.x .cell:not(.x):not(.circle):hover::before{
    transform: rotate(45deg);
 }
 
