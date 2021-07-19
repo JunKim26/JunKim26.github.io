@@ -34,6 +34,7 @@ body {
   position:relative;
   background-color:white;
   margin:1px;
+  cursor:pointer;
 }
 
 .cell: first-child,
@@ -57,7 +58,19 @@ body {
 }
 
 .cell.x::before,
-.cell.x::after{
+.cell.x::after,{
+background-color: black;
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,{
+ background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after{
   content: '';
   position: absolute;
   width: 13.5px;
@@ -65,10 +78,37 @@ body {
   background-color: black;
 }
 
-.cell.x::before{
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before,{
    transform: rotate(45deg);
 }
 
-.cell.x::after{
+.cell.x::after,
+board.x .cell:not(.x):not(.circle):hover::after{
    transform: rotate(-45deg);
+}
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+
+
+.cell.circle::before,
+.cell.circle::after{
+  content: '';
+  position: absolute;
+  border-radius;
+
+  
+  .cell.circle::before{
+  width: 90px;
+  height: 90px;
+  background-color:black;
+}
+  
+    .cell.circle::after,{
+  width: 63px;
+  height: 63px;
+  background-color:white;
 }
