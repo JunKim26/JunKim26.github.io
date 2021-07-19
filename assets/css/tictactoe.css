@@ -58,12 +58,18 @@ body {
 }
 
 .cell.x::before,
-.cell.x::after,{
+.cell.x::after,
+.cell.circle::before,
+.cell.circle::after,{
 background-color: black;
 }
 
+
+
 .board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after,{
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,{
  background-color: lightgrey;
 }
 
@@ -75,7 +81,6 @@ background-color: black;
   position: absolute;
   width: 13.5px;
   height: 90px;
-  background-color: black;
 }
 
 .cell.x::before,
@@ -95,20 +100,56 @@ board.x .cell:not(.x):not(.circle):hover::after{
 
 
 .cell.circle::before,
-.cell.circle::after{
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after{
   content: '';
   position: absolute;
-  border-radius;
+  border-radius: 50%;
 
   
-  .cell.circle::before{
+  .cell.circle::before,
+  .board.circle .cell:not(.x):not(.circle):hover::before{
   width: 90px;
   height: 90px;
-  background-color:black;
 }
   
-    .cell.circle::after,{
+  .cell.circle::after,
+  .board.circle .cell:not(.x):not(.circle):hover::after{
   width: 63px;
   height: 63px;
   background-color:white;
 }
+  
+  .winning-message{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    botom:0;
+    background-color: rgba(0,0,0, .9);
+    jsutify-content: center;
+    alignt-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  
+    .winning-message button{
+    font-size: 3rem;
+      background-color: white;
+      border: 1px black;
+      padding .25em .5em;
+      cursor: pointer;
+  }
+  
+    .winning-message button:hover {
+      background-color: black;
+      color:white;
+      border-color:white;
+  }
+  
+    .winning-message.show{
+    display:flex;
+  }
