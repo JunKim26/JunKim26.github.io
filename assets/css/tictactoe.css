@@ -61,7 +61,7 @@ body {
 .cell.x::after,
 .cell.circle::before,
 .cell.circle::after,{
-background-color: black;
+background-color: black !important;
 }
 
 
