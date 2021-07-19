@@ -135,6 +135,7 @@ font-size: 3rem;
   border: 1px black;
   padding .25em .5em;
   cursor: pointer;
+  color:black;
 }
 
 .winning-message button:hover {
