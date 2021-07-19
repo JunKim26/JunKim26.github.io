@@ -58,9 +58,7 @@ body {
 }
 
 .cell.x::before,
-.cell.x::after,
-.board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after{
+.cell.x::after{
   content: '';
   position: absolute;
   width: 13.5px;
@@ -68,14 +66,19 @@ body {
   background-color: black;
 }
 
-.cell.x::before,
-.board.x .cell:not(.x):not(.circle):hover::before{
-   transform: rotate(45deg);
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after{
+  content: '';
+  position: absolute;
+  width: 13.5px;
+  height: 90px;
 }
 
+.cell.x::before,
 .cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after{
-   transform: rotate(-45deg);
+   transform: rotate(45deg);
 }
 
 .cell.x,
