@@ -125,29 +125,28 @@ background-color:white;
   flex-direction: column;
 }
 
-  .winning-message button{
-  font-size: 3rem;
-    background-color: white;
-    border: 1px black;
-    padding .25em .5em;
-    cursor: pointer;
+.winning-message button{
+font-size: 3rem;
+  background-color: white;
+  border: 1px black;
+  padding .25em .5em;
+  cursor: pointer;
 }
 
-  .winning-message button:hover {
-    background-color: black;
-    color:white;
-    border-color:white;
+.winning-message button:hover {
+  background-color: black;
+  color:white;
+  border-color:white;
 }
 
-  .winning-message.show{
-  display:flex;
+.winning-message.show{
+display:flex;
 }
 
 
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before,
-.board.circle .cell:not(.x):not(.circle):hover::after{
  background-color: lightgrey;
 }
 
