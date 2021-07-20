@@ -39,7 +39,7 @@ function handleClick(e) {
   placeMark(cell, currentClass)
   if(checkWin(currentClass)) {
     endGame(false)
-  } else if (isDraw){
+  } else if (isDraw()){
     endGame(true)
   } else{
     swapTurns()
@@ -60,7 +60,7 @@ function endGame(draw){
 }
 
 function isDraw(){
-  return [...cellElement].every(cell => {
+  return [...cellElements].every(cell => {
     return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS)
   })
 }
@@ -86,7 +86,7 @@ function setBoardHoverClass () {
 function checkWin(currentClass){
   return WINNING_COMBINATIONS.some(combination =>{
     return combination.every(index =>{
-      return cellElements[index].classList.contains(curentClass)
+      return cellElements[index].classList.contains(currentClass)
   })
 })
 }
