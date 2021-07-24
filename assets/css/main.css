@@ -2752,7 +2752,7 @@ input, select, textarea {
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			width: 50%; /* changed from 40*/
 		}
 
 			.tiles article .image {
@@ -2827,7 +2827,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
+				width: 50%; /* used to be 60*/
 			}
 
 			.tiles article:nth-child(6n - 5):before {
