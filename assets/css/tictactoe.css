@@ -14,7 +14,7 @@ body {
 .board{
   width: 100%;
   min-width:350px;
-  height: 50vh;
+  height: 60vh;
   display:grid;
   justify-content: center;
   align-content: center;
