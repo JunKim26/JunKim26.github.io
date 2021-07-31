@@ -11,6 +11,11 @@ body {
   margin:0;
 }
 
+.tttheader{
+  text-align:center;
+}
+
+
 .board{
   width: 100%;
   min-width:350px;
