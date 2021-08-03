@@ -3952,3 +3952,11 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+/* Misc */
+
+.gap-20{
+	width:100%;
+	height:20px;
+}
