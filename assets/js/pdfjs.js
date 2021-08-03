@@ -48,9 +48,6 @@ function renderPage(num) {
       }
     });
   });
-
-  // Update page counters
-  document.getElementById('page_num').textContent = num;
 }
 
 /**
@@ -74,6 +71,7 @@ function onPrevPage() {
   }
   pageNum--;
   queueRenderPage(pageNum);
+  document.getElementById("input_page").value = pageNum;
 }
 document.getElementById('prev').addEventListener('click', onPrevPage);
 
@@ -84,10 +82,36 @@ function onNextPage() {
   if (pageNum >= pdfDoc.numPages) {
     return;
   }
+  
   pageNum++;
   queueRenderPage(pageNum);
+  document.getElementById("input_page").value = pageNum;
 }
+
 document.getElementById('next').addEventListener('click', onNextPage);
+
+/**
+ * Displays input page.
+ */
+
+function onInputPage(value){
+	if ( value > pdfDoc.numPages) {
+    return;
+  }
+  if (value < 1) {
+    return;
+  }
+  
+  pageNum = value;
+  queueRenderPage(pageNum);
+}
+
+document.getElementById('input_page').addEventListener('change', function(evt){
+	num_page = Number(this.value);
+  onInputPage(num_page);
+	}
+);
+
 
 /**
  * Asynchronously downloads PDF.
