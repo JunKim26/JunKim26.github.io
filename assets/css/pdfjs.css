@@ -10,7 +10,7 @@
 
 .viewer-container{
     background:none;
-    width: 50%;
+    width: 80%;
     /* center a div insie another div*/
     display: flex;
     flex-direction: column;
