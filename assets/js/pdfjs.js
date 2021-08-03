@@ -1,7 +1,7 @@
 
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
+var url = 'https://junkim26.github.io/assets/pdf/mobile_prototypes.pdf';
 //https://f.hubspotusercontent10.net/hubfs/5957063/TRG_E_Books/trg_retirement_guides/TRG-general-retirement-guide.pdf
 
 
