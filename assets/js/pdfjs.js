@@ -1,8 +1,4 @@
 
-
-Javascript
-
-
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
 var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
