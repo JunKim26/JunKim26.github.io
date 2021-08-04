@@ -8,6 +8,10 @@
   direction: ltr;
 }
 
+input{
+  color:black !important;
+}
+
 .viewer-container{
     background:none;
     width: 80%;
