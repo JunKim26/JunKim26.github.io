@@ -14,7 +14,6 @@ var pdfDoc = null,
     pageNum = 1,
     pageRendering = false,
     pageNumPending = null,
-    scale = 1.5,
     canvas = document.getElementById('the-canvas'),
     ctx = canvas.getContext('2d');
 
@@ -26,7 +25,7 @@ function renderPage(num) {
   pageRendering = true;
   // Using promise to fetch the page
   pdfDoc.getPage(num).then(function(page) {
-    var viewport = page.getViewport({scale: scale});
+    var viewport = page.getViewport({scale: document.getElementById("pdf-scale").innerHTML});
     canvas.height = viewport.height;
     canvas.width = viewport.width;
 
@@ -89,6 +88,7 @@ function onNextPage() {
 
 document.getElementById('next').addEventListener('click', onNextPage);
 
+
 /**
  * Displays input page.
  */
@@ -110,6 +110,23 @@ document.getElementById('input_page').addEventListener('change', function(evt){
   onInputPage(num_page);
 	}
 );
+
+/**
+ * Changes Canvas size depending on viewport.
+ */
+
+function changeSize(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById("pdf-scale").innerHTML = 0.5;
+  } else {
+    document.getElementById("pdf-scale").innerHTML = 1.5;
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+changeSize(x) // Call listener function at run time
+
+x.addListener(changeSize) // Attach listener function on state changes
 
 
 /**
