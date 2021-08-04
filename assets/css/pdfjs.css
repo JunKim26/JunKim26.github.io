@@ -33,3 +33,6 @@ input{
     align-items: center;
 }
 
+#pdf-scale{
+    display: none;
+}
