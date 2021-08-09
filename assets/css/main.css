@@ -3961,10 +3961,11 @@ input, select, textarea {
 	height:20px;
 }
 
-#button_row {
+.button_row {
     display:inline;      
 }
-#button_row_items {
+
+.button_row_items {
     display: flex;
     justify-content:space-around;
     list-style-type:none;
