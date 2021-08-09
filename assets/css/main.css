@@ -3973,10 +3973,10 @@ input, select, textarea {
 
 @media only screen and (max-width:700px){
 	.button_row {
-	    flex-direction: column;
+	    flex-direction: column !important;
 	}
 
 	.button_row_item:nth-child(2){
-	    order:-1;
+	    order:-1 !important;
 	}
 }
