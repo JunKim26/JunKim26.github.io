@@ -3972,6 +3972,10 @@ input, select, textarea {
     margin: 5px;
 }
 
+.button-trg{
+    min-width:230px !important;
+}
+
 @media only screen and (max-width:700px){
 	.button_row_item {
 	    flex-direction: column !important;
