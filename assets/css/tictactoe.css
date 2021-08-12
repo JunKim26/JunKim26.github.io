@@ -164,3 +164,8 @@ display:flex;
  background-color: lightgrey;
 }
 
+.proj_desc{
+  float:left;
+  margin: 20px 50px;
+}
+
