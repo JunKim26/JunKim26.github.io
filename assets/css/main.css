@@ -3976,6 +3976,12 @@ input, select, textarea {
     min-width:230px !important;
 }
 
+
+.full-header{
+  width:100% !important;
+  text-align:center;
+}
+
 @media only screen and (max-width:700px){
 	.button_row_item {
 	    flex-direction: column !important;
