@@ -36,3 +36,8 @@ input{
 #pdf-scale{
     display: none;
 }
+
+.proj_desc{
+  margin-right:20px;
+  float:left;
+}
