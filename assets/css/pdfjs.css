@@ -37,7 +37,10 @@ input{
     display: none;
 }
 
-.proj_desc{
-  margin-right:20px;
+.proj-desc{
   float:left;
+}
+
+.proj-desc.first{
+  margin-right:50px;
 }
