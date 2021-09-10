@@ -3976,6 +3976,11 @@ input, select, textarea {
     min-width:230px !important;
 }
 
+.workflow-img{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+}
 
 .full-header{
   width:100% !important;
