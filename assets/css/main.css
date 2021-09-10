@@ -3977,9 +3977,9 @@ input, select, textarea {
 }
 
 .workflow-img{
-    display:flex;
-    justify-content:center;
-    width: 100%;
+    display:flex !important;
+    justify-content:center !important;
+    width: 100% !important; 
 }
 
 .full-header{
