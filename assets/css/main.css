@@ -3989,6 +3989,10 @@ input, select, textarea {
     width: max-content;
 }
 
+.proj-desc{
+  float:left;
+}
+
 @media only screen and (max-width:700px){
 	.button_row_item {
 	    flex-direction: column !important;
