@@ -4012,3 +4012,11 @@ input, select, textarea {
 	    order:-1 !important;
 	}
 }
+
+@media only screen and (max-width:600px){
+	.proj-desc-container{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+}
