@@ -3997,7 +3997,7 @@ input, select, textarea {
   margin-right:200px;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:850px){
 	.button_row_item {
 	    flex-direction: column !important;
 	}
