@@ -3965,9 +3965,11 @@ input, select, textarea {
     display:inline;      
 }
 
-.button_row_container{
+.button_row_container {
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
+    list-style-type:none;
+    margin: 5px;
 }
 
 .button_row_items {
