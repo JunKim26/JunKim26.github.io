@@ -3967,13 +3967,13 @@ input, select, textarea {
 
 .button_row_items {
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     list-style-type:none;
     margin: 5px;
 }
 
 .button-trg{
-    min-width:230px !important;
+    width:250px !important;
 }
 
 .workflow-img{
