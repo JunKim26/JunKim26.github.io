@@ -3967,7 +3967,7 @@ input, select, textarea {
 
 .button_row_container {
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     list-style-type:none;
     margin: 5px;
 }
