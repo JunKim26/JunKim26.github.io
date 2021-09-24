@@ -3965,6 +3965,11 @@ input, select, textarea {
     display:inline;      
 }
 
+.button_row_container{
+    display: flex;
+    justify-content:center;
+}
+
 .button_row_items {
     display: flex;
     justify-content:center;
@@ -3998,7 +4003,7 @@ input, select, textarea {
 }
 
 @media only screen and (max-width:850px){
-	.button_row_item {
+	.button_row_container {
 	    flex-direction: column !important;
 	}
 	.button_row_items:nth-child(2){
