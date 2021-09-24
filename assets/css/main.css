@@ -4019,4 +4019,7 @@ input, select, textarea {
 		flex-direction:column;
 		justify-content:center;
 	}
+	.proj-desc.first-desc{
+		margin-right:0px;
+	}
 }
