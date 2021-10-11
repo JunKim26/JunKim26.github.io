@@ -4004,6 +4004,14 @@ input, select, textarea {
   margin-right:200px;
 }
 
+@media only screen and (max-width:1500px){
+
+	.button-trg{
+	    min-width:350px !important;
+	}
+	
+}
+
 @media only screen and (max-width:850px){
 	.button_row_container {
 	    flex-direction: column !important;
