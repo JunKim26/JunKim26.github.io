@@ -3996,6 +3996,10 @@ input, select, textarea {
     width: max-content;
 }
 
+.margin-auto{
+    margin:auto;
+}
+
 .proj-desc{
   float:left;
 }
