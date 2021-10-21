@@ -3985,6 +3985,8 @@ input, select, textarea {
 
 .workflow-img{
     width: 100% !important; 
+    max-width: 1200px;
+	
 }
 
 .full-header{
