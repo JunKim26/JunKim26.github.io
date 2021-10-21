@@ -2219,7 +2219,13 @@ input, select, textarea {
 				}
 
 			}
-
+	
+		.image.workflow{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+		}
+	
 /* List */
 
 	ol {
