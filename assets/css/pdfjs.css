@@ -44,3 +44,11 @@ input{
 .proj-desc.first-desc{
   margin-right:200px;
 }
+
+
+@media only screen and (max-width:500px){
+	.prev, .next{
+    width: 40px;
+		padding: 0px;
+	}
+}
