@@ -3976,6 +3976,7 @@ input, select, textarea {
     justify-content:center;
     list-style-type:none;
     margin: 5px;
+    margin-top: 20px;
 }
 
 .button_row_items {
