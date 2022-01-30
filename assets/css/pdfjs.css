@@ -47,8 +47,8 @@ input{
 
 
 @media only screen and (max-width:500px){
-	.prev, .next{
-    width: 40px;
-		padding: 0px;
+.prev, .next{
+    width: 40px !important;
+    padding: 0px !important; 
 	}
 }
