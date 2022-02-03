@@ -3995,6 +3995,18 @@ input, select, textarea {
     max-width: 1150px;
 }
 
+.database-img{
+    width: 80% 
+    max-width: 1150px;
+}
+
+.schema-img{
+    height: 60% ;
+    width: 60% ;
+    max-width: 1150px;
+}
+
+
 .full-header{
   width:100% !important;
   text-align:center;
