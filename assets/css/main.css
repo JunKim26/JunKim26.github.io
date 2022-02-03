@@ -3996,7 +3996,7 @@ input, select, textarea {
 }
 
 .database-img{
-    width: 80% 
+    width: 80% ;
     max-width: 1150px;
 }
 
