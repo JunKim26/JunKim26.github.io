@@ -3991,7 +3991,7 @@ input, select, textarea {
 }
 
 .workflow-img{
-    width: 100%; 
+    width: 100% !important; 
     max-width: 1150px;
 }
 
@@ -4030,9 +4030,6 @@ input, select, textarea {
 	}
 	.button_row_items:nth-child(2){
 	    order:-1 !important;
-	}
-	.workflow-img{
-    		width: 80%; 
 	}
 }
 
