@@ -3991,9 +3991,8 @@ input, select, textarea {
 }
 
 .workflow-img{
-    width: 100% !important; 
+    width: 100%; 
     max-width: 1150px;
-	
 }
 
 .full-header{
@@ -4031,6 +4030,9 @@ input, select, textarea {
 	}
 	.button_row_items:nth-child(2){
 	    order:-1 !important;
+	}
+	.workflow-img{
+    		width: 80%; 
 	}
 }
 
