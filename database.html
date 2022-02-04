@@ -109,6 +109,46 @@
 										<span class="image">
 											<img class = "database-img" src="images/database/users.jpg" alt="" />
 										</span>
+						
+										<div class = "gap-20"></div>  
+					
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Columns in table:
+											</p>
+											<ul>
+												<li>user_id: INT, auto_increment, unique, NOT NULL, Primary Key (PK)</li>
+												<li>username: VARCHAR(255)</li>
+											</ul>
+										</div>
+							
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Relationships:
+											</p>
+											<ol>
+												<li>
+													A M:M relationship between USERS and MUSCLE_GROUPS.
+													USERS can choose to target one or many MUSCLE_GROUPS, 
+													and MUSCLE_GROUPS can be attributed to zero or many USERS. 
+													When USERS accounts are created, they will choose which MUSCLE_GROUPS 
+													to target using the MUSCLE_GROUPS table, therefore, 
+													USERS must have at least one MUSCLE GROUP. 
+													See the USERS_MUSCLEGROUPS table.
+												</li>
+											</ol>
+										</div>
+									</div>
+									
+									<div>
+										<h4  class="max-content">EXERCISES</h4>
+										<p>
+											EXERCISES: records the different exercises that target different muscles. 
+											Each exercise will have at most one equipment that is associated with it.										</p>
+										
+										<span class="image">
+											<img class = "database-img" src="images/database/users.jpg" alt="" />
+										</span>
 																				
 										<div class = "heuristic-list">
 											<p style="font-weight:bold;">
