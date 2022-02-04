@@ -162,6 +162,10 @@
 											<ul>
 												<li>exercise_id: INT, auto_increment, unique, NOT NULL, PK</li>
 												<li>exercise_name: VARCHAR(255), NOT NULL</li>
+												<li>weight: DECIMAL</li>
+												<li>set_count: INT, NOT NULL</li>
+												<li>rep_count: INT, NOT NULL</li>
+												<li>equipment_required: INT, FK to EQUIPMENT.equipment_id</li>
 											</ul>
 										</div>
 							
@@ -175,6 +179,14 @@
 													EXERCISES can be targeted by one or many MUSCLE_GROUPS, 
 													and MUSCLE_GROUPS can have one or many EXERCISES. 
 													See MUSCLEGROUPS_EXERCISES table.
+												</li>
+												<li>
+													A M:1 relationship between EXERCISES and EQUIPMENT. 
+													EXERCISES will be associated with zero or one piece of EQUIPMENT. 
+													EQUIPMENT can be used for one or more EXERCISES. 
+													Foreign Key for this relationship (EQUIPMENT.equipment_id)
+													is stored within the EXERCISES table.
+
 												</li>
 											</ol>
 										</div>
