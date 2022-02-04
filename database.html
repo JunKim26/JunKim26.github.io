@@ -202,7 +202,145 @@
 
 									
 									<div>
-										<h4  class="max-content">USER EXERCISES</h4>
+										<h4  class="max-content">MUSCLES</h4>
+										<p>
+											MUSCLES: records the different muscles in the body the user can choose to focus on.
+										</p>
+										
+										<span class="image">
+											<img class = "database-img" src="images/database/muscles.jpg" alt="" />
+										</span>
+										<div class = "gap-20"></div>  
+										
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Columns in table:
+											</p>
+											<ul>
+												<li>muscle_id: INT, auto_increment, unique, not NULL, PK</li>
+												<li>muscle_name: VARCHAR(255), NOT NULL</li>
+												<li>muscle_group: INT, FK to MUSCLE_GROUPS.muscle_group_id</li>
+											</ul>
+										</div>
+							
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Relationships:
+											</p>
+											<ul>
+												<li>
+													A 1:M relationship between MUSCLES and MUSCLE_GROUPS is implemented. 
+													MUSCLES are always attributed to just one MUSCLE_GROUP, while MUSCLE_GROUPS can contain many MUSCLES. 
+													Foreign Key for this relationship (MUSCLE_GROUPS.muscle_group_id) is stored within the MUSCLES table.
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+									
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div>  
+
+									
+									<div>
+										<h4  class="max-content">MUSCLE GROUP</h4>
+										<p>
+											MUSCLE_GROUPS: records the different muscle groups chosne by the USERS for a workout.
+										</p>
+										
+										<span class="image">
+											<img class = "database-img" src="images/database/muscle_groups.jpg" alt="" />
+										</span>
+										<div class = "gap-20"></div>  
+										
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Columns in table:
+											</p>
+											<ul>
+												<li>muscle_group_id: INT, auto_increment not NULL, PK</li>
+												<li>muscle_group_name: TEXT, NOT NULL</li>
+											</ul>
+										</div>
+							
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Relationships:
+											</p>
+											<ul>
+												<li>
+													A M:M relationship between MUSCLE_GROUPS and USERS is implemented.
+													MUSCLE_GROUPS can be attributed to one or many USERS, and USERS can target one or many 
+													MUSCLE_GROUPS. See the USERS_MUSCLEGROUPS table.
+												</li>
+												<li>
+													A M:M relationship between MUSCLE_GROUPS and EXERCISES is implemented. MUSCLE_GROUPS can be worked by one or  multiple EXERCISES,
+													and EXERCISES can target one or multiple MUSCLE_GROUPS (such as compound exercises). See MUSCLEGROUPS_EXERCISES table.
+												</li>
+												<li>
+													A 1:M relationship between MUSCLE_GROUPS and MUSCLES is implemented. 
+													MUSCLE_GROUPS can be attributed to one or multiple MUSCLES, 
+													however MUSCLES are always attributed to just one MUSCLE_GROUP.
+													Foreign Key for this relationship (MUSCLE_GROUPS.muscle_group_id) is stored within the MUSCLES table.
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+									
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div> 
+
+									
+									<div>
+										<h4  class="max-content">EQUIPMENTS</h4>
+										<p>
+											EQUIPMENT: a table to store the names of different equipment used for each type of exercise (barbell, single kettlebell, dual kettlebell, curl bar, bands etc.)
+										</p>
+										
+										<span class="image">
+											<img class = "database-img" src="images/database/equipments.jpg" alt="" />
+										</span>
+										<div class = "gap-20"></div>  
+										
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Columns in table:
+											</p>
+											<ul>
+												<li>equipment_id: INT, auto_increment, unique, not NULL, PK</li>
+												<li>equipment_name: VARCHAR(255), NOT NULL</li>
+											</ul>
+										</div>
+							
+										<div class = "heuristic-list">
+											<p style="font-weight:bold;">
+												Relationships:
+											</p>
+											<ul>
+												<li>
+													A 1:M relationship between EQUIPMENT and EXERCISES. EQUIPMENT can be used for one or many EXERCISES,
+													while EXERCISES will use zero or one EQUIPMENT. 
+													Foreign Key for this relationship (EQUIPMENT.equipment_id) is stored within the EXERCISES table.
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+									
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div>  
+									<div class = "gap-20"></div>  
+									
+									
+									<h4  class="max-content">Many-to-Many Composite / Association Tables </h4>
+									
+									<div class = "gap-20"></div>  
+									
+									<div>
+										<h4  class="max-content">USERS EXERCISES</h4>
 										
 										<p>
 											USERS_EXERCISES: stores the many-to-many relationship between USERS and EXERCISES.
@@ -227,16 +365,15 @@
 									<div class = "gap-20"></div>  
 									<div class = "gap-20"></div>  
 									<div class = "gap-20"></div>  
-
+									
 									
 									<div>
-										<h4  class="max-content">MUSCLE GROUP</h4>
+										<h4  class="max-content">MUSCLE GROUP EXERCISES</h4>
 										<p>
-											MUSCLE_GROUPS: records the different muscle groups chosne by the USERS for a workout.
-										</p>
-										
+											MUSCLEGROUPS_EXERCISES: stores the many-to-many relationship between MUSCLE_GROUPS and EXERCISES.										
+										</p>	
 										<span class="image">
-											<img class = "database-img" src="images/database/muscle_groups.jpg" alt="" />
+											<img class = "database-img" src="images/database/muscle_group_exercises.jpg" alt="" />
 										</span>
 										<div class = "gap-20"></div>  
 										
@@ -245,34 +382,8 @@
 												Columns in table:
 											</p>
 											<ul>
-												<li>exercise_id: INT, auto_increment, unique, NOT NULL, PK</li>
-												<li>exercise_name: VARCHAR(255), NOT NULL</li>
-												<li>weight: DECIMAL</li>
-												<li>set_count: INT, NOT NULL</li>
-												<li>rep_count: INT, NOT NULL</li>
-												<li>equipment_required: INT, FK to EQUIPMENT.equipment_id</li>
-											</ul>
-										</div>
-							
-										<div class = "heuristic-list">
-											<p style="font-weight:bold;">
-												Relationships:
-											</p>
-											<ul>
-												<li>
-													A M:M relationship between EXERCISES and MUSCLE_GROUPS is implemented. 
-													EXERCISES can be targeted by one or many MUSCLE_GROUPS, 
-													and MUSCLE_GROUPS can have one or many EXERCISES. 
-													See MUSCLEGROUPS_EXERCISES table.
-												</li>
-												<li>
-													A M:1 relationship between EXERCISES and EQUIPMENT. 
-													EXERCISES will be associated with zero or one piece of EQUIPMENT. 
-													EQUIPMENT can be used for one or more EXERCISES. 
-													Foreign Key for this relationship (EQUIPMENT.equipment_id)
-													is stored within the EXERCISES table.
-
-												</li>
+												<li>muscle_group_id: INT, FK to MUSCLE_GROUPS.muscle_group_id</li>
+												<li>exercise_id: INT, FK to EXERCISES.exercise_id</li>
 											</ul>
 										</div>
 									</div>
@@ -282,35 +393,6 @@
 									<div class = "gap-20"></div>  
 									<div class = "gap-20"></div>  
 									
-									<div class = "gap-20"></div>  
-									
-									<div class="max-content margin-auto">
-										<h3> Muscle Group </h3>
-									</div>
-
-									<span class="image">
-										<img class = "database-img" src="images/database/muscle_groups.jpg" alt="" />
-									</span>
-									
-									<div class = "gap-20"></div>  
-									
-									<div class="max-content margin-auto">
-										<h3> Muscle Group Exercises </h3>
-									</div>
-
-									<span class="image">
-										<img class = "database-img" src="images/database/muscle_group_exercises.jpg" alt="" />
-									</span>
-								    
-									<div class = "gap-20"></div>  
-									
-									<div class="max-content margin-auto">
-										<h3> Equipments </h3>
-									</div>
-
-									<span class="image">
-										<img class = "database-img" src="images/database/equipments.jpg" alt="" />
-									</span>
 							</section>
 					</div>
 				
