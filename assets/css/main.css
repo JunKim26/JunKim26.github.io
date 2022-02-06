@@ -4008,8 +4008,8 @@ input, select, textarea {
 
 
 .full-header{
-  width:100% !important;
-  text-align:center;
+    width:100% !important;
+    text-align:center;
 }
 
 .max-content{
@@ -4021,11 +4021,16 @@ input, select, textarea {
 }
 
 .proj-desc{
-  float:left;
+    float:left;
 }
 
 .proj-desc.first-desc{
-  margin-right:200px;
+    margin-right:200px;
+}
+
+.about_description {
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width:1680px){
