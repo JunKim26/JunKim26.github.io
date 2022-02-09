@@ -4056,11 +4056,9 @@ input, select, textarea {
 }
 
 @media only screen and (min-width:1680px){
-
 	.button-trg{
 	    min-width:350px !important;
 	}
-	
 }
 
 @media only screen and (max-width:850px){
@@ -4089,7 +4087,6 @@ input, select, textarea {
 	    display:flex;
 	    flex-direction:column;
 	}
-	
 }
 
 
@@ -4103,5 +4100,4 @@ input, select, textarea {
 	.proj-desc.first-desc{
 		margin-right:0px;
 	}
-
 }
