@@ -3995,7 +3995,7 @@ input, select, textarea {
 }
 
 .me-img-cotainer{
-    width:300px;
+    width:500px;
 }
 
 .workflow-img{
@@ -4076,6 +4076,11 @@ input, select, textarea {
 	.proj-desc.first-desc{
 		margin-right:0px;
 	}
+	
+	.me-img-cotainer{
+	    width:300px;
+	}
+	
 	#about_intro{
 	    display:flex;
 	    flex-direction:column;
