@@ -4043,7 +4043,7 @@ input, select, textarea {
 
 .centering-div {
 	display:flex;
-	justify-contents: center;
+	justify-content: center;
 	align-items: center;
 }
 
