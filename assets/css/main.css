@@ -4040,6 +4040,7 @@ input, select, textarea {
 .about_description {
     display: flex;
     justify-content: center;
+    flex-direction:column;
     margin: 25px;
 }
 
