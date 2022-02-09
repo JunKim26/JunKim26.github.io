@@ -4087,6 +4087,10 @@ input, select, textarea {
 	    width:300px;
 	}
 	
+	.centering-div {
+	    width:100%
+	}
+	
 	#about_intro{
 	    display:flex;
 	    flex-direction:column;
