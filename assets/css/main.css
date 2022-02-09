@@ -3991,7 +3991,11 @@ input, select, textarea {
 }
 
 .me-img{
-    width:250px;
+    width:100%;
+}
+
+.me-img-cotainer{
+    width:300px;
 }
 
 .workflow-img{
