@@ -4039,6 +4039,7 @@ input, select, textarea {
 .about_description {
     display: flex;
     justify-content: center;
+    margin: 25px;
 }
 
 .centering-div {
