@@ -4066,23 +4066,14 @@ input, select, textarea {
 	.button_row_container {
 	    flex-direction: column !important;
 	}
+	
 	.button_row_items:nth-child(2){
 	    order:-1 !important;
 	}
+	
 	.database-img, .schema-img {
 	    height: 100%;
 	    width: 100%;
-	}
-}
-
-@media only screen and (max-width:600px){
-	.proj-desc-container{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-	}
-	.proj-desc.first-desc{
-		margin-right:0px;
 	}
 	
 	.me-img-container{
@@ -4096,6 +4087,20 @@ input, select, textarea {
 	#about_intro{
 	    display:flex;
 	    flex-direction:column;
+	}
+	
+}
+
+
+
+@media only screen and (max-width:600px){
+	.proj-desc-container{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+	}
+	.proj-desc.first-desc{
+		margin-right:0px;
 	}
 
 }
