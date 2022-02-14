@@ -2,7 +2,7 @@ Jun Kim
 
 Hi, This is my personal page.
 
-My page is located at junkim26.github.io
+My page is located at [junkim26.github.io](https://junkim26.github.io/)
 
 I have posted links to my resume, noteworthy projects, and contact information onto the page.
 
